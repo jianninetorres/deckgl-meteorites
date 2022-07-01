@@ -4,8 +4,7 @@ import StaticMap from "react-map-gl";
 import axios from "axios";
 import { RenderLayers } from "./deck.gl-layer";
 
-const MAPBOX_ACCESS_TOKEN =
-  "pk.eyJ1IjoianRvcmxlc3AiLCJhIjoiY2w1MXFqbWd1MDg3bTNxcWhsc280enY3diJ9.3RMRu6jqB3aKNXtkJGD6hg";
+const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
 const mapStyle = "mapbox://styles/jtorlesp/cl51tnhls004b14qfsua2jxy2";
 
 const App = () => {
