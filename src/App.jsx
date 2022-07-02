@@ -38,7 +38,6 @@ const App = () => {
               name: i.name,
               id: i.id,
               coordinates: i.geolocation.coordinates,
-              mass: i.mass,
               mass: Number(i.mass),
               year: getDate(i.year),
               fall: i.fall,
@@ -64,7 +63,6 @@ const App = () => {
 
   const renderToolTip = ({ x, y, object, layer }) => {
     setHover({ x, y, object, layer });
-    console.log({ x, y, object, layer });
   };
 
   return (
