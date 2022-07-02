@@ -21,7 +21,7 @@ const App = () => {
 
   const getDate = (date) => {
     const d = new Date(date);
-    return d.toDateString();
+    return d.getFullYear();
   };
 
   const fetchData = async () => {
