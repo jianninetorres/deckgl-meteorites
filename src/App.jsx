@@ -5,8 +5,7 @@ import axios from "axios";
 import { RenderLayers } from "./deck.gl-layer";
 import Tooltip from "./components/tooltip/Tooltip";
 
-const MAPBOX_ACCESS_TOKEN =
-  "pk.eyJ1IjoianRvcmxlc3AiLCJhIjoiY2w1Mmx2NnBiMGd1MjNqbXJmdnlwdzM1YyJ9.oIOV9Hwi8q9rb8cpsqDhWw";
+const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
 const mapStyle = "mapbox://styles/jtorlesp/cl543g040000i14kdljcneyob";
 
 const App = () => {
