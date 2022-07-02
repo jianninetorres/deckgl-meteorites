@@ -14,7 +14,6 @@ const App = () => {
   const [hover, setHover] = useState({
     x: 0,
     y: 0,
-    hoveredObject: null,
   });
 
   useEffect(() => {
@@ -38,9 +37,11 @@ const App = () => {
           d = d.map((i) => {
             return {
               name: i.name,
+              id: i.id,
               coordinates: i.geolocation.coordinates,
               mass: i.mass,
               year: getDate(i.year),
+              fall: i.fall,
             };
           });
 

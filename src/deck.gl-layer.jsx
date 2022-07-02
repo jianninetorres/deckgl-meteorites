@@ -1,5 +1,13 @@
 import { ColumnLayer } from "@deck.gl/layers";
 
+const renderColours = (fall) => {
+  if (fall !== "Fell") {
+    return [66, 245, 72];
+  } else {
+    return [195, 11, 82];
+  }
+};
+
 export const RenderLayers = (props) => {
   const layers = [
     new ColumnLayer({
@@ -10,7 +18,7 @@ export const RenderLayers = (props) => {
       getPosition: (d) => d.coordinates, // GPS coordinates for each meteorite fall
       diskResolution: 10,
       radius: 25000,
-      getFillColor: [195, 11, 82],
+      getFillColor: (d) => renderColours(d.fall),
       onHover: props.onHover,
     }),
   ];
