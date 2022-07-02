@@ -2,9 +2,9 @@ import { ColumnLayer } from "@deck.gl/layers";
 
 const renderColours = (fall) => {
   if (fall !== "Fell") {
-    return [66, 245, 72];
+    return [40, 247, 106];
   } else {
-    return [195, 11, 82];
+    return [247, 237, 40];
   }
 };
 

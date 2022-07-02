@@ -1,6 +1,8 @@
+import styles from "./styles.css";
+
 const Tooltip = (props) => {
   return (
-    <div>
+    <div style={styles}>
       {props.hover.object && (
         <div
           style={{
@@ -14,14 +16,14 @@ const Tooltip = (props) => {
             width: 250,
           }}
         >
-          <ul className="hoveredObjectData">
+          <ul className="hovered-object-data">
             <li>
               <h4>{props.hover.object.name}</h4>
             </li>
             <li>id: {props.hover.object.id}</li>
-            <li>Fall: {props.hover.object.fall}</li>
+            <li>Observation: {props.hover.object.fall}</li>
             <li>Year: {props.hover.object.year}</li>
-            <li>Mass: {props.hover.object.mass}</li>
+            <li>Mass: {props.hover.object.mass} grams</li>
           </ul>
         </div>
       )}
