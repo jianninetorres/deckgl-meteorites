@@ -11,6 +11,7 @@ export const RenderLayers = (props) => {
       diskResolution: 10,
       radius: 25000,
       getFillColor: [195, 11, 82],
+      onHover: props.onHover,
     }),
   ];
 
