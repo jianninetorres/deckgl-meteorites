@@ -6,4 +6,4 @@ Created with React and deck.gl, using [NASA public dataset](https://data.nasa.go
 
 `yarn start`
 
-![Screen Shot 2022-07-02 at 1 12 37 PM](https://user-images.githubusercontent.com/13004645/177010004-48e01e3e-d557-45df-a171-c524699f0fe9.png)
+![Screen Shot 2022-07-02 at 3 15 13 PM](https://user-images.githubusercontent.com/13004645/177013633-290d125b-3d95-480f-9014-8c46eda1ab4c.png)
