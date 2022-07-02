@@ -21,6 +21,11 @@ const App = () => {
     void fetchData();
   }, []);
 
+  const getDate = (date) => {
+    const d = new Date(date);
+    return d.toDateString();
+  };
+
   const fetchData = async () => {
     try {
       return await axios
@@ -35,6 +40,7 @@ const App = () => {
               name: i.name,
               coordinates: i.geolocation.coordinates,
               mass: i.mass,
+              year: getDate(i.year),
             };
           });
 

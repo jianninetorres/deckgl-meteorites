@@ -17,6 +17,7 @@ const Tooltip = (props) => {
             <li>
               <h4>{props.hover.object.name}</h4>
             </li>
+            <li>Year: {props.hover.object.year}</li>
             <li>Mass: {props.hover.object.mass}</li>
           </ul>
         </div>
