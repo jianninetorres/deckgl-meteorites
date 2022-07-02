@@ -39,6 +39,7 @@ const App = () => {
               id: i.id,
               coordinates: i.geolocation.coordinates,
               mass: i.mass,
+              mass: Number(i.mass),
               year: getDate(i.year),
               fall: i.fall,
             };

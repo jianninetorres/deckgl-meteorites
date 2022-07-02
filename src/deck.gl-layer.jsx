@@ -16,7 +16,7 @@ export const RenderLayers = (props) => {
       pickable: true,
       extruded: true,
       getPosition: (d) => d.coordinates, // GPS coordinates for each meteorite fall
-      diskResolution: 10,
+      diskResolution: 100,
       radius: 25000,
       getFillColor: (d) => renderColours(d.fall),
       onHover: props.onHover,
